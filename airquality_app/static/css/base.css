@@ -1,0 +1,23 @@
+.good{
+  background-color: green;
+}
+
+.moderate{
+  background-color: blue;
+}
+
+.USG{
+  background-color: yellow;
+}
+
+.Unhealthy{
+  background-color: orange;
+}
+
+.Very_Unhealthy{
+  background-color: red;
+}
+
+.Hazardous{
+  background-color: maroon;
+}

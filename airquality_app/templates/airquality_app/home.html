@@ -1,0 +1,24 @@
+{% extends "airquality_app/base.html" %}
+{% block bodyblock %}
+
+<br/><br/>
+
+
+{% if api %}
+    {% if api == "Error.."%}
+        <p>There was an error. Please try again</p>
+    {% else %}
+        <div class="container">
+
+        <div class="jumbotron {Category_Color}}">
+        <h1 class="display-4">Category : {{api.0.Category.Name}}</h1>
+        <p class="lead">{{api.0.ReportingArea}} Air Quality :{{api.0.AQI}} </p>
+        <hr class="my-4">
+        {{Category_description}}
+
+
+    {% endif %}
+{% endif %}
+</div>
+
+{% endblock %}
